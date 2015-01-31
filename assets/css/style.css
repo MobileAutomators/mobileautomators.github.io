@@ -1,3 +1,23 @@
 ---
 layout: style
 ---
+
+.float_right {
+  float: right;
+}
+img.left_margin {
+  margin-left: 20px;
+}
+img.right_margin {
+  margin-right: 20px;
+}
+img.top_margin {
+  margin-top: 20px;
+}
+img.bottom_margin {
+  margin-bottom: 20px;
+}
+
+ol {
+  padding-left: 18px;
+}
