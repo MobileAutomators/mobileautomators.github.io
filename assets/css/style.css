@@ -21,3 +21,14 @@ img.bottom_margin {
 ol {
   padding-left: 18px;
 }
+
+.navbar-default {
+  background-color: {{ site.colors.nav }};
+}
+.navbar-brand {
+  font-family: 'Changa One', cursive;
+}
+
+#headerwrap {
+  background-color: {{ site.colors.secondary }};
+}

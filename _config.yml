@@ -1,7 +1,7 @@
 ### GENERAL SETTINGS ###
 
 # Site settings
-title: "Mobile Automators"
+title: "MOBILE AUTOMATORS"
 description: "Mobile test automation community"
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
 baseurl: "" #important: start with /
@@ -13,13 +13,14 @@ permalink: /:categories/:title
 excerpt_separator: <!--more--> #use this in posts to define how long the excerpt of the post (that is shown on the Blog page) is
 
 colors:  #in hex code if not noted else
-  primary: "#00b3fe" #"#F70031"
-  primary_rgb: "0,179,254" #"247,0,49" #rgb of the primary. Needed in some places for the transparency effect.
-  secondary: "#384452" #"#33004D"
-  link: "#428bca"
-  link_hover: "#01b2fe"
+  primary: "#ff6b6b"
+  primary_rgb: "0,179,254" #rgb of the primary. Needed in some places for the transparency effect.
+  secondary: "#345770"
+  link: "#4ecdc4"
+  link_hover: "#4ecdc4"
   footer_heading: "#ffffff"
   footer_content: "#bfc9d3"
+  nav: "#354754"
 
 
 ### CONTACT SETTINGS ###
