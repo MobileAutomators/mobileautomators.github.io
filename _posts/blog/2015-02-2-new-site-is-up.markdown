@@ -12,9 +12,9 @@ New meetup, new community - NEW SITE!
 
 ### Why do we need a site?
 
-Meetup.com take care of the whole event angle and that's not what it's all about. It's also about the talks, the videos, the slides and maybe even a discussion board. I dunno - whatever we feel we need. This is is the place to do it in.
+Meetup.com takes care of the whole event angle and that's not what it's all about. It's also about the talks, videos and slides and anything else we feel we need. This is the place to do it in.
 
-I also think meetup's user interface and design are very lacking and I want to give it more of a personal touch. A place where you can actually feel the vibe.
+Meetup's UI and stying are very lacking IMO and I want to give it more of a personal touch. To feel the vibe.
 
 Yeah yeah I know, it's no there yet. I'm on it.
 
