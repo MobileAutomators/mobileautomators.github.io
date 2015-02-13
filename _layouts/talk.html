@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+{% include wrap.html %}
+
+<div class="container mtb">
+    <div class="row">
+        <div class="col-lg-8">
+            <a href="{{ page.url | prepend: site.baseurl }}">
+                <h3 class="ctitle">{{ page.title }}</h3>
+            </a>
+            <p>
+                <csmall>{{ page.date | date: "%b %-d, %Y" }}. | Speaker: {{ page.speaker }}</csmall>
+            </p>
+
+            {{ content }}
+
+            {% if page.youtube %}
+            <iframe width="853" height="480" src="https://www.youtube.com/embed/{{ page.youtube }}?rel=0" frameborder="0" allowfullscreen></iframe>
+            {% endif %}
+
+            {% if page.slideshare %}
+            <iframe src="//www.slideshare.net/slideshow/embed_code/{{ page.slideshare }}" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="max-width: 100%;" allowfullscreen></iframe>
+            {% endif %}
+
+            <div class="spacing"></div>
+            <h6>SHARE:</h6>
+            <p class="share">
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-tumblr"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+            </p>
+        </div>
+    </div>
+</div>

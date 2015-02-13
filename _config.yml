@@ -5,7 +5,7 @@ title: "MOBILE AUTOMATORS"
 description: "Mobile test automation community"
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
 baseurl: "" #important: start with /
-url: "http://mobileautomators.com"
+url: http://mobileautomators.com
 
 # Build settings
 markdown: kramdown
@@ -27,26 +27,10 @@ colors:  #in hex code if not noted else
 
 # Social networks usernames. Many more available: google-plus, flickr, linkedin, etc). Shown in footer.
 social:
-  - title: dribbble
-    url:
-  - title: facebook
-    url:
-  - title: twitter
-    url:
-  - title: instagram
-    url:
-  - title: tumblr
-    url:
-
-# Postal address (add as many lines as necessary). Shown in footer and on Contact page.
-address:
-  - lines:
-    - Some Ave, 987,
-    - 23890, New York,
-    - United States.
-email: ran@ranbena.com
-tel: +34 8493-4893
-
+  - title: youtube
+    url: https://www.youtube.com/channel/UCBHV7BBUEZkoS8IkEk9PcsQ
+  - title: meetup
+    url: http://meetup.com/Mobile-Automators-Israel/
 
 ### GENERAL DATA FOR VARIOUS LOCATIONS ###
 
@@ -54,31 +38,16 @@ tel: +34 8493-4893
 members:
   - name: Ran Ben Aharon
     position: Founder
-    text: Hello there
-    img: team01.jpg
+    text: Yeah it's just me.
+    img: members/ranbena.jpg
     social:
       - title: envelope #use for email address
         url: mailto:ran@ranbena.com
       - title: twitter
         url: http://twitter.com/handle
+      - title: tumblr
+        url: http://ranbena.com
 
-
-# Clients information. Shown on Home and About pages.
-clients:
-  - name: dribbble
-    img: client01.png
-  - name: Code is Poetry
-    img: client02.png
-  - name: Vimeo
-    img: client03.png
-  - name: VimeoPro
-    img: client04.png
 
 # Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
 about: "Mobile Automators is..."
-
-# Testimonial content. Shown on Home and About page.
-testimonial:
-    message: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
-    author: Marcel Newman
-    position: WEB DESIGNER - BLACKTIE.CO

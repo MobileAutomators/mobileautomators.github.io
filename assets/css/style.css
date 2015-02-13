@@ -2,6 +2,17 @@
 layout: style
 ---
 
+.clearfix:before,.clearfix:after {
+  content:" ";
+  display:table
+}
+.clearfix:after {
+  clear:both
+}
+.clearfix {
+  *zoom:1
+}
+
 .float_right {
   float: right;
 }
@@ -31,4 +42,60 @@ ol {
 
 #headerwrap {
   background-color: {{ site.colors.secondary }};
+}
+#headerwrap h1 .btn {
+  padding: 6px 10px 7px;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  border: none;
+  position: relative;
+  top: -3px;
+}
+
+.btn-primary {
+  background-color: #4BC1BC;
+  box-shadow: 1px 1px 0 #354754;
+}
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+  background-color: #F47368;
+  box-shadow: 1px 1px 0 #64C2BF;
+}
+
+talk {
+  border-top: 1px solid #eeeeee;
+  display: block;
+  margin-top: 20px;
+  padding-top: 30px;
+}
+talk:first-child {
+  border-top: 0;
+  margin-top: 0;
+  padding-top: 0;
+}
+talk h4 {
+  color: {{ site.colors.secondary }};
+}
+talk speaker {
+  color: {{ site.colors.footer_content }};
+}
+talk img {
+  float: left;
+  margin: 0 10px 10px 0;
+  width: 238px;
+  height: 153px;
+}
+talk p {
+  max-width: 690px;
+}
+
+#featured {
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+#featured h1 {
+  margin-bottom: 40px;
+}
+.row {
+  margin: 0;
 }
