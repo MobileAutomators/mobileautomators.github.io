@@ -2,7 +2,7 @@
 layout: talk
 title: "Test Automation Challenges at Vonage Mobile"
 date: 2015-02-02 20:0:00
-speaker: Yuval Golan
+author: Yuval Golan
 categories:
 - talks
 thumb: /assets/img/blog/thumbs/20150202-2.jpg

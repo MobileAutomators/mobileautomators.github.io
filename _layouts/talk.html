@@ -21,16 +21,21 @@ layout: default
             {% endif %}
 
             {% if page.slideshare %}
-            <iframe src="//www.slideshare.net/slideshow/embed_code/{{ page.slideshare }}" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="max-width: 100%;" allowfullscreen></iframe>
+            <iframe src="//www.slideshare.net/slideshow/embed_code/{{ page.slideshare }}" width="425"
+            {% if page.slide_ratio == 'hd' %}
+                height="290"
+            {% else %}
+                height="355"
+            {% endif %}
+            frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="max-width: 100%;" allowfullscreen></iframe>
             {% endif %}
 
             <div class="spacing"></div>
             <h6>SHARE:</h6>
             <p class="share">
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-tumblr"></i></a>
-                <a href="#"><i class="fa fa-google-plus"></i></a>
+                <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Twitter"><i class="fa fa-twitter"></i></a>
+                <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook"><i class="fa fa-facebook"></i></a>
+                <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+"><i class="fa fa-google-plus"></i></a>
             </p>
         </div>
     </div>
