@@ -13,6 +13,10 @@ layout: style
   *zoom:1
 }
 
+a {
+  transition: none;
+}
+
 .float_right {
   float: right;
 }
@@ -53,13 +57,20 @@ ol {
   top: -3px;
 }
 
-.btn-primary {
-  background-color: #4BC1BC;
-  box-shadow: 1px 1px 0 #354754;
+.btn {
+  border: none;
 }
-.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+.btn-primary,
+.btn-secondary:hover, .btn-secondary:active, .btn-secondary:focus {
   background-color: #F47368;
   box-shadow: 1px 1px 0 #64C2BF;
+  color: white;
+}
+.btn-secondary,
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+  background-color: #4BC1BC;
+  box-shadow: 1px 1px 0 #354754;
+  color: white;
 }
 
 talk {
@@ -68,7 +79,7 @@ talk {
   margin-top: 20px;
   padding-top: 30px;
 }
-talk:first-child {
+talk:first-of-type {
   border-top: 0;
   margin-top: 0;
   padding-top: 0;
@@ -88,6 +99,25 @@ talk img {
 talk p {
   max-width: 690px;
 }
+
+
+div[role="sidebar"] h4 {
+  border-bottom: 2px solid #345770;
+  margin-bottom: 0px;
+}
+div[role="sidebar"] p {
+  margin-bottom: 50px;
+}
+div[role="sidebar"] talk {
+  margin-top: 0px;
+  padding-top: 10px;
+  border: none;
+}
+div[role="sidebar"] talk img{
+  width: 140px;
+  height: auto;
+}
+
 
 #featured {
   margin-top: 60px;

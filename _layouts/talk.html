@@ -11,21 +11,23 @@ layout: default
                 <h3 class="ctitle">{{ page.title }}</h3>
             </a>
             <p>
-                <csmall>{{ page.date | date: "%b %-d, %Y" }}. | Speaker: {{ page.speaker }}</csmall>
+                <csmall>{{ page.date | date: "%b %-d, %Y" }}. | Speaker: {{ page.author }}</csmall>
             </p>
 
             {{ content }}
 
             {% if page.youtube %}
-            <iframe width="853" height="480" src="https://www.youtube.com/embed/{{ page.youtube }}?rel=0" frameborder="0" allowfullscreen></iframe>
+            <h4>The vid</h4>
+            <iframe width="425" height="290" src="https://www.youtube.com/embed/{{ page.youtube }}?rel=0" frameborder="0" allowfullscreen></iframe>
             {% endif %}
 
             {% if page.slideshare %}
+            <h4>The slides</h4>
             <iframe src="//www.slideshare.net/slideshow/embed_code/{{ page.slideshare }}" width="425"
             {% if page.slide_ratio == 'hd' %}
                 height="290"
             {% else %}
-                height="355"
+                height="357"
             {% endif %}
             frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="max-width: 100%;" allowfullscreen></iframe>
             {% endif %}
@@ -38,5 +40,6 @@ layout: default
                 <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+"><i class="fa fa-google-plus"></i></a>
             </p>
         </div>
+        {% include sidebar.html %}
     </div>
 </div>
