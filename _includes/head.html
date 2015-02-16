@@ -22,7 +22,7 @@
     <meta name="description" content="{{ site.description }}">
     {% endif %}
     {% if page.url %}
-    <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+    <meta content="{{ site.url }}{{ page.url }}/" property="og:url">
     {% endif %}
     {% if page.date %}
     <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
@@ -31,7 +31,9 @@
     <meta content="{{ page.author }}" property="article:author">
     <meta name="author" content="{{ page.author }}">
     {% endif %}
-    {% if page.thumb %}
+    {% if page.image %}
+    <meta content="{{ site.url }}{{ page.image }}" property="og:image">
+    {% elsif page.thumb %}
     <meta content="{{ site.url }}{{ page.thumb }}" property="og:image">
     {% else %}
     <meta content="{{ site.url }}/assets/img/logo-share.png" property="og:image">

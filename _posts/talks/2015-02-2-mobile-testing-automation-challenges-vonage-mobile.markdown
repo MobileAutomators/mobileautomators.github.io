@@ -6,6 +6,7 @@ author: Yuval Golan
 categories:
 - talks
 thumb: /assets/img/blog/thumbs/20150202-2.jpg
+image: /assets/img/blog/20150202-2.jpg
 youtube: D7FUjEYTJFE
 slideshare: 44212178
 ---
