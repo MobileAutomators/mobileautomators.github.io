@@ -37,14 +37,14 @@ social:
 # Members information. Shown on About page.
 members:
   - name: Ran Ben Aharon
-    position: Founder
-    text: Yeah it's just me.
-    img: members/ranbena.jpg
+    position: "Automation & Tools Lead at EverythingMe"
+    text: Yeah... it's just me.
+    img: ranbena.jpg
     social:
       - title: envelope #use for email address
         url: mailto:ran@ranbena.com
       - title: twitter
-        url: http://twitter.com/handle
+        url: http://twitter.com/ranbena
       - title: tumblr
         url: http://ranbena.com
 

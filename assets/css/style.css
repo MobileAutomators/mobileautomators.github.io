@@ -43,6 +43,9 @@ ol {
 .navbar-brand {
   font-family: 'Changa One', cursive;
 }
+.navbar-brand:hover {
+  color: {{ site.colors.primary }} !important;
+}
 
 #headerwrap {
   background-color: {{ site.colors.secondary }};
@@ -128,4 +131,9 @@ div[role="sidebar"] talk img{
 }
 .row {
   margin: 0;
+}
+
+div[role="member"] .fa {
+  font-size: 25px;
+  margin-right: 7px;
 }
