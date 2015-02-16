@@ -6,7 +6,7 @@ author: Ran Ben Aharon
 categories:
 - talks
 thumb: /assets/img/blog/thumbs/20150202-1.jpg
-youtube:
+youtube: _kKiMXvtDsY
 slideshare: 44210324
 slide_ratio: hd
 ---
