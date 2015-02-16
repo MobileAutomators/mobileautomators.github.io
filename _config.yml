@@ -26,13 +26,13 @@ colors:  #in hex code if not noted else
 ### CONTACT SETTINGS ###
 
 # Social networks usernames. Many more available: google-plus, flickr, linkedin, etc). Shown in footer.
-social:
-  - title: youtube
-    url: https://www.youtube.com/channel/UCBHV7BBUEZkoS8IkEk9PcsQ
-  - title: meetup
+links:
+  - title: The Meetup page
     url: http://meetup.com/Mobile-Automators-Israel/
-
-### GENERAL DATA FOR VARIOUS LOCATIONS ###
+  - title: Our YouTube channel
+    url: https://www.youtube.com/channel/UCBHV7BBUEZkoS8IkEk9PcsQ/videos
+  - title: GitHub page
+    url: https://github.com/MobileAutomators
 
 # Members information. Shown on About page.
 members:
@@ -47,7 +47,3 @@ members:
         url: http://twitter.com/ranbena
       - title: tumblr
         url: http://ranbena.com
-
-
-# Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
-about: "Mobile Automators is..."

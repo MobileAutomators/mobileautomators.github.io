@@ -1,6 +1,6 @@
 <div class="col-lg-4" role="sidebar">
     <p>
-        <a href="/upcoming" class="btn btn-secondary">JOIN OUR UPCOMING EVENT</a>
+        <a href="/#upcoming" class="btn btn-secondary">JOIN OUR UPCOMING EVENT</a>
     </p>
 
     <h4>Recent Talks</h4>
@@ -17,11 +17,10 @@
         {% endif %}
     {% endfor %}
     </p>
-
-    <h4>Popular Tags</h4>
+    <!-- <h4>Popular Tags</h4>
     <p>
     {% for category in site.categories %}{% unless category.first == "blog" or category.first == "project" or category.first == "question" %}
             <a class="btn btn-theme" href="{{ '/category/#'  | prepend: site.baseurl  }}{{ category | first }}" role="button">{{ category | first | capitalize }} ({{ category | last | size }})</a>
         {% endunless %}{% endfor %}
-    </p>
+    </p> -->
 </div>

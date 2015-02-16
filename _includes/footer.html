@@ -2,28 +2,33 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-4">
-                <h4>About</h4>
+                <h4>About Us</h4>
                 <div class="hline-w"></div>
-                <p>{{ site.about }}</p>
+                <p>A community for anyone doing or getting into Mobile Test Automation to share, discuss and network.<br /><a href="/about">Learn more</a></p>
             </div>
             <div class="col-lg-4">
-                <h4>Social Links</h4>
+                <h4>Links</h4>
                 <div class="hline-w"></div>
                 <p>
-                    {% for network in site.social %}
-                        <a href="{{ network.url }}" class="btn-social btn-outline"><i class="fa fa-{{ network.title }}"></i></a>
+                    {% for link in site.links %}
+                        <a href="{{ link.url }}" target="_blank">{{ link.title }}</a>
+                        <br />
                     {% endfor %}
                 </p>
             </div>
             <div class="col-lg-4">
-                <h4>Our Bunker</h4>
+                <h4>The Website</h4>
                 <div class="hline-w"></div>
                 <p>
-                    {% for line in site.address.first.lines %}
-                        {{ line }} <br>
-                    {% endfor %}
+                    Built with <a href="http://jekyllrb.com/" target="_blank">jekyll</a> on top of the <a href="https://github.com/st4ple/solid-jekyll" target="_blank">solid theme</a> and deployed to Github Pages.<br /><a href="https://github.com/MobileAutomators/mobileautomators.github.io/blob/master/README.md" target="_blank">Learn more and contribute</a>
+
                 </p>
             </div>
         </div><! --/row -->
     </div><! --/container -->
 </div><! --/footerwrap -->
+
+[jekyll]:
+[solid]:
+[repo]:
+
