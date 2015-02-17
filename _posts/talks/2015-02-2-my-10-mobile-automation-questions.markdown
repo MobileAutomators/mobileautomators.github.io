@@ -8,7 +8,7 @@ categories:
 - talks
 thumb: /assets/img/blog/thumbs/20150202-1.jpg
 image: /assets/img/blog/20150202-1.jpg
-youtube: _kKiMXvtDsY
+youtube: vE11deV_OMI
 slideshare: 44210324
 slide_ratio: hd
 ---
