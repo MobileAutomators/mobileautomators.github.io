@@ -152,7 +152,7 @@ div[role="member"] .fa {
 div[role="tba"] {
   background-image: url(/assets/img/pattern.png);
   background-color: #00b3fe;
-  padding: 80px;
+  padding: 80px 0;
 }
 div[role="tba"] h4 {
   font-size: 40px;
