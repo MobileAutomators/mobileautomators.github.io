@@ -107,6 +107,13 @@ talk p {
   max-width: 690px;
 }
 
+@media (max-width: 500px) {
+  talk img {
+    float: none;
+    display: block;
+  }
+}
+
 
 div[role="sidebar"] h4 {
   border-bottom: 2px solid #345770;
@@ -152,6 +159,9 @@ div[role="tba"] h4 {
   margin-bottom: 30px;
   color: white;
 }
+div[role="tba"] p {
+  line-height: 1em;
+}
 div[role="tba"] .join,
 div[role="tba"] .join a {
   font-size: 30px;
@@ -166,10 +176,7 @@ div[role="tba"] .join a {
 div[role="tba"] .contact {
   margin-top: 80px;
   font-size: 25px;
-  line-height: 1.2em;
 }
 div[role="tba"] .contact a{
   font-size: 16px;
-  position: relative;
-  top: -2px;
 }
