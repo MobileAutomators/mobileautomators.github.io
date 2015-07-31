@@ -1,0 +1,77 @@
+<style>
+  img[src$="wework.png"] {
+    width: 154px;
+    vertical-align: text-top;
+  }
+  img[src$="gett.png"] {
+    width: 45px;
+    vertical-align: initial;
+  }
+  #map-canvas {
+    height: 400px;
+    width: 400px;
+  }
+</style>
+
+<div role="upcoming" id="upcoming">
+  <div class="container">
+    <div id="map-canvas"></div>
+    <h1>Aug 17th, <a href="https://www.wework.com/locations/tel-aviv/dubnov" target="_blank">
+      <img src="assets/img/session-2/wework.png" /></a> Tel Aviv rooftop</h1>
+    <h4>Mobile Automation at Gett <img src="assets/img/session-2/gett.png" /></h4>
+    <ul class="agenda">
+      <li><time>19:30</time> Meet and greet</li>
+      <li><time>20:00</time> Latest news in Mobile Automation (Ran Byron)</li>
+      <li><time>20:15</time> Testing Gett's mobile apps (Adi Ben Aroya)</li>
+
+      <a href="http://www.meetup.com/Mobile-Automators-Israel/events/224345150/" target="_blank" class="btn btn-primary" role="join">Join The Meetup</a></a>
+    </ul>
+    <div id="markerInfoWindow">
+      <img src="assets/img/session-2/wework-infowindow.jpg" width="150"/>
+      <a href="https://www.wework.com/locations/tel-aviv/dubnov" target="_blank">
+        <strong style="line-height: 35px; color: #F47368;"><center>WEWORK 7 Dubnov, TLV</center></strong></a>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+    <script>
+
+      var map = new google.maps.Map(
+        document.getElementById('map-canvas'),
+        {
+          zoom: 16,
+          center: new google.maps.LatLng(32.07513, 34.7832568),
+          styles: [
+            {
+              stylers: [
+                { hue: "#00adf7" }
+              ]
+            },{
+              featureType: "road",
+              elementType: "geometry",
+              stylers: [
+                { lightness: 100 },
+                { visibility: "simplified" }
+              ]
+            }
+          ]
+        }
+      ),
+      position = new google.maps.LatLng(32.07513, 34.7832568),
+      infowindow = new google.maps.InfoWindow({
+        content: document.getElementById('markerInfoWindow').innerHTML,
+        maxWidth: 200
+      });
+
+      var marker = new google.maps.Marker({
+          position: position,
+          map: map,
+          icon: 'assets/img/session-2/marker.png',
+      });
+
+      infowindow.open(map, marker);
+
+      google.maps.event.addListener(marker, 'click', function() {
+        infowindow.open(map,marker);
+      });
+    </script>
+  </div>
+</div>
