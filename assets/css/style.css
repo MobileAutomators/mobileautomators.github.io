@@ -174,8 +174,9 @@ div[role="upcoming"] .join a {
   box-shadow: 1px 1px 0 #354754;
 }
 div[role="upcoming"] .contact {
-  margin-top: 80px;
+  margin-top: 60px;
   font-size: 25px;
+  line-height: 36px;
 }
 div[role="upcoming"] .contact a {
   font-size: 16px;
